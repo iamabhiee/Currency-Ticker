@@ -12,7 +12,8 @@
 		5D25412D1D5F339E00008F04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D25412B1D5F339E00008F04 /* Main.storyboard */; };
 		5D25412F1D5F339E00008F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D25412E1D5F339E00008F04 /* Assets.xcassets */; };
 		5D2541321D5F339E00008F04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D2541301D5F339E00008F04 /* LaunchScreen.storyboard */; };
-		5D25413D1D5F339E00008F04 /* Currency_TickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25413C1D5F339E00008F04 /* Currency_TickerTests.swift */; };
+		5D25414B1D5F35B400008F04 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25414A1D5F35B400008F04 /* Currency.swift */; };
+		5D25414E1D5F36D600008F04 /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25414D1D5F36D600008F04 /* CurrencyTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +35,9 @@
 		5D2541311D5F339E00008F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D2541331D5F339E00008F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D2541381D5F339E00008F04 /* Currency-TickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Currency-TickerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D25413C1D5F339E00008F04 /* Currency_TickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency_TickerTests.swift; sourceTree = "<group>"; };
 		5D25413E1D5F339E00008F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D25414A1D5F35B400008F04 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		5D25414D1D5F36D600008F04 /* CurrencyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		5D2541261D5F339E00008F04 /* Currency-Ticker */ = {
 			isa = PBXGroup;
 			children = (
+				5D2541491D5F35A100008F04 /* Model */,
 				5D2541271D5F339E00008F04 /* AppDelegate.swift */,
 				5D2541291D5F339E00008F04 /* ViewController.swift */,
 				5D25412B1D5F339E00008F04 /* Main.storyboard */,
@@ -90,10 +93,26 @@
 		5D25413B1D5F339E00008F04 /* Currency-TickerTests */ = {
 			isa = PBXGroup;
 			children = (
-				5D25413C1D5F339E00008F04 /* Currency_TickerTests.swift */,
+				5D25414C1D5F36D600008F04 /* Model */,
 				5D25413E1D5F339E00008F04 /* Info.plist */,
 			);
 			path = "Currency-TickerTests";
+			sourceTree = "<group>";
+		};
+		5D2541491D5F35A100008F04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D25414A1D5F35B400008F04 /* Currency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5D25414C1D5F36D600008F04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D25414D1D5F36D600008F04 /* CurrencyTests.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D25414B1D5F35B400008F04 /* Currency.swift in Sources */,
 				5D25412A1D5F339E00008F04 /* ViewController.swift in Sources */,
 				5D2541281D5F339E00008F04 /* AppDelegate.swift in Sources */,
 			);
@@ -206,7 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D25413D1D5F339E00008F04 /* Currency_TickerTests.swift in Sources */,
+				5D25414E1D5F36D600008F04 /* CurrencyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
